@@ -1,0 +1,24 @@
+.box {
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+
+}
+
+img {
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+.anniu {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid pink;
+  margin-top: 10px;
+  box-shadow: 5px 5px 0 pink;
+  border-radius: 10px;
+  cursor: pointer;
+}
