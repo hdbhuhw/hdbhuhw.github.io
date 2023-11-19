@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, rgb(229, 109, 233) 0%, #5a1150 100%);
+  overflow: hidden;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  position: relative;
+  left: 100px;
+  color: red;
+  font-size: 50px;
+}
+
+.list span {
+  font-weight: bold;
+  font-size: 25px;
+  color: pink;
+}
+
+.demo-list {
+  font-size: 20px;
+}
+
+.demo-list li a {
+  color: aqua;
+}

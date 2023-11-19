@@ -1,0 +1,102 @@
+.boxa {
+  width: 47px;
+  height: 30px;
+  line-height: 30px;
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 4px;
+}
+
+.boxa:nth-child(4n) {
+  margin-right: 0;
+}
+
+.box {
+  margin: 0 auto;
+  width: 212px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.show {
+  width: 185px;
+  height: 30px;
+  background-color: skyblue;
+  color: black;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  line-height: 30px;
+  padding: 0 10px;
+  border-radius: 10px;
+  transform: translateX(-2px);
+  box-shadow: 0 0 5px red;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.results,
+.reset {
+  width: 68px;
+  height: 50px;
+  background-color: pink;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.bigbox {
+  width: 220px;
+  height: 260px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.bigbox::after {
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 270px;
+  left: 5px;
+  top: 5px;
+  background: powderblue;
+  border-radius: 10px;
+  z-index: -1;
+  border: 1px solid black;
+}
+
+.bigbox::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(pink, red, yellow);
+  top: 50%;
+  left: 50%;
+  z-index: -2;
+  transform-origin: 0 0;
+  animation: rotate 0.5s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn)
+  }
+}
