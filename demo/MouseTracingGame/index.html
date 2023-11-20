@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPS鼠标描点游戏</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .page {
+      position: absolute;
+      top: 50px;
+      left: 1700px;
+    }
+
+    .random {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border: 1px solid black;
+      border-radius: 50%;
+      display: none;
+    }
+
+    .fraction {
+      width: 300px;
+      height: 100px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 40px;
+      line-height: 100px;
+      border-radius: 10px;
+      background-color: skyblue;
+    }
+
+    .start,
+    .reset {
+      width: 100px;
+      height: 40px;
+      border: 1px solid black;
+      text-align: center;
+      border-radius: 5px;
+      background-color: aliceblue;
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .timeout {
+      width: 300px;
+      height: 100px;
+      background-color: aqua;
+      position: absolute;
+      top: 30vh;
+      left: 43vw;
+      display: none;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .miaoshu {
+      width: 250px;
+      height: 70px;
+      border: 1px solid black;
+      margin-top: 30px;
+      text-align: center;
+      padding-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div data-id="1" class="random randoma"></div>
+    <div data-id="1" class="random randomb"></div>
+  </div>
+  <div class="page">
+    <div class="fraction">分数</div>
+    <div class="start">开始</div>
+    <div class="reset">重置</div>
+    <div class="miaoshu">点击开始之后点击随机出现的红球即可获得分数</div>
+  </div>
+  <div class="timeout">4秒后开始</div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
